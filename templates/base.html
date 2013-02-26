@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link
+            rel="stylesheet"
+            href="{{url_for("static", filename="css/watermains.css")}}"
+        ></link>
+    </head>
+    <body>
+        <main>
+{% block content %}
+{% endblock %}
+        </main>
+    </body>
+</html>
