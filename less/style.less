@@ -1,39 +1,33 @@
 /**
+ * vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4 filetype=css
+ *
  * Copyright (c) Paul R. Tagliamonte <tag@pault.ag>, 2013 under the terms
  * and conditions of the `Expat' license.
  */
 
+@header-height:                          50px;
 
-.bumper {
-    padding-left:                           5%;
-    padding-right:                          5%;
+
+body {
+    background-color:                    #EEEEEE;
 }
 
+.content-shim {
+    width:                               90%;
+    margin-left:                         auto;
+    margin-right:                        auto;
+}
 
 .header {
-    .bumper;
-
-    border-bottom:                          @header-border-style;
-    height:                                 @header-height;
-    line-height:                            @header-height;
-
-    img {
-        vertical-align:                     middle;
-    }
-
-    .left {
-        float:                              left;
-    }
-    .right {
-        float:                              right;
-    }
-    .clear {
-        clear:                              both;
-    }
+    background-color:                    #FFFFFF;
+    height:                              @header-height;
+    line-height:                         @header-height;
+    border-bottom:                       1px solid #CCCCCC;
+    font-weight:                         bold;
+    font-size:                           1.2em;
 }
 
-.container {
-    .bumper;
-
-    margin-top:                             2%;
+.content {
+    padding-top:                         20px;
+    .content-shim;
 }
