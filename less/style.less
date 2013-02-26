@@ -1,0 +1,39 @@
+/**
+ * Copyright (c) Paul R. Tagliamonte <tag@pault.ag>, 2013 under the terms
+ * and conditions of the `Expat' license.
+ */
+
+
+.bumper {
+    padding-left:                           5%;
+    padding-right:                          5%;
+}
+
+
+.header {
+    .bumper;
+
+    border-bottom:                          @header-border-style;
+    height:                                 @header-height;
+    line-height:                            @header-height;
+
+    img {
+        vertical-align:                     middle;
+    }
+
+    .left {
+        float:                              left;
+    }
+    .right {
+        float:                              right;
+    }
+    .clear {
+        clear:                              both;
+    }
+}
+
+.container {
+    .bumper;
+
+    margin-top:                             2%;
+}
